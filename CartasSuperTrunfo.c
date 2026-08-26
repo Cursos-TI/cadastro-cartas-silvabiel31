@@ -5,6 +5,9 @@
 // Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
 
 int main() {
+  
+printf("***SUPER TRUNFO - CIDADES***\n");
+
   // Área para definição das variáveis para armazenar as propriedades das cidades
 
   char  estado[25];
@@ -14,6 +17,8 @@ int main() {
   float area;
   float pib;
   int turismo;
+  float densidade;
+  float pib_per_capita;
 
   // Área para entrada de dados
 
@@ -32,6 +37,11 @@ scanf ("%f", &pib);
 printf("digite o Turismo: \n");
 scanf ("%d", &turismo);
 
+// Área para cálculos das propriedades das cidades
+
+densidade = populacao / area;
+pib_per_capita = pib / populacao;
+
   // Área para exibição dos dados da cidade
 
 printf("Estado: %s\n", estado);
@@ -41,6 +51,9 @@ printf("População: %d\n", populacao);
 printf("Área: %.2f\n", area);
 printf("PIB: %.2f\n", pib);
 printf("Turismo: %d\n", turismo);
+printf("Densidade: %.2f\n", densidade);
+printf("PIB per capita: %.2f\n", pib_per_capita);
+
 
 return 0;
 } 
